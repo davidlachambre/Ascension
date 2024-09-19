@@ -1,0 +1,363 @@
+{
+    "general":  {
+                    "imageBgFlou": "bgFlou",
+                    "grosseurBgFlou":   {
+                                            "x": 10,
+                                            "y": 10
+                                        },
+                    "positionBgFlou":   {
+                                            "x": 0,
+                                            "y": 168
+                                        },
+                    "positionCiel": {
+                                        "x": 0,
+                                        "y": 0
+                                    },
+                    "grandeurMonde":    {
+                                            "x": 15360,
+                                            "y": 768
+                                        },
+                    "gravite": 10000,
+                    "vitesseBg": 4,
+                    "velociteCamera": 0.48,
+                    "tempsTransitionNiveau": 6000,
+                    "decalageCamAvant": 900,
+                    "finNiveau":    {
+                                        "image": "texteFinNiveau",
+                                        "grosseur": {
+                                                        "x": 1,
+                                                        "y": 1
+                                                    },
+                                        "dureeTween":   {
+                                                            "debut": 2500,
+                                                            "fixe": 2000,
+                                                            "fin": 1000
+                                                        },
+                                        "musique": "musiqueFinNiveau"
+                                    },
+                    "distanceNiveaux": 1470,
+                    "collisionTuiles":  {
+                                            "debut": 1,
+                                            "fin": 1
+                                        },
+                    "nbNiveaux": 3,
+                    "decalageEnnemi": 100,
+                    "pluie":    {
+                        "image": "goutte",
+                        "nbParticules": 200,
+                        "gravite": -10000,
+                        "grosseurMin": 0.4,
+                        "grosseurMax": 0.6,
+                        "dureeVie": 1500,
+                        "frequenceGouttes": 0,
+                        "rotation": 0,
+                        "vitesseYmin": 800,
+                        "vitesseYmax": 1200,
+                        "vitesseXmin": 200,
+                        "vitesseXmax": 200
+                    }
+                },
+    "audio":    {
+                    "musiqueGagnant": "",
+                    "musiquePerdant": "",
+                    "explosion": "sonExplosion",
+                    "preCrash": "sonPreCrash",
+                    "moteurEtouffe": "sonMoteurEtouffe",
+                    "moteur": "sonMoteur",
+                    "ballonPop": "sonBallonPop",
+                    "fadeSon": 0.005
+                },
+    "hud":      {
+                    "police":   {
+                                    "font": "Arial narrow",
+                                    "fill": "#ffffff",
+                                    "fontSize": "60px"
+                                },
+                    "decalageTxtDistanceFinale": 150,
+                    "affichageDistance":    {
+                                                "x": 150,
+                                                "y": 693
+                                            },
+                    "boutonPause":  {
+                                        "decalageX": 75,
+                                        "decalageY": 68,
+                                        "image": "boutonPause",
+                                        "grosseur": {
+                                                        "x": 1,
+                                                        "y": 1
+                                                    }
+                                    },
+                    "boutonMusiqueOn":  {
+                                        "decalageX": 195,
+                                        "decalageY": 68,
+                                        "image": "boutonMusiqueOn",
+                                        "grosseur": {
+                                                        "x": 1,
+                                                        "y": 1
+                                                    }
+                                    },
+                    "boutonMusiqueOff":  {
+                                        "decalageX": 195,
+                                        "decalageY": 68,
+                                        "image": "boutonMusiqueOff",
+                                        "grosseur": {
+                                                        "x": 1,
+                                                        "y": 1
+                                                    }
+                                    },
+                    "iconeDrapeau": {
+                                        "decalageX": 80,
+                                        "decalageY": 50,
+                                        "image": "miniDrapeau"
+                                    },
+                    "grosseurDrapeau": {
+                                        "x": 1,
+                                        "y": 1
+                                    }
+                },
+    "perso":    {
+                    "imagePerso": "perso",
+                    "anchor":   {
+                                    "x": 0.14,
+                                    "y": 0.78
+                                },
+                    "animPerso":   {
+                                        "cle": "animPerso",
+                                        "frameRate": 60,
+                                        "loop": true
+                                    },
+                    "animPersoChoke":   {
+                                            "cle": "animPersoChoke",
+                                            "frameRate": 60,
+                                            "loop": false
+                                        },
+                    "x": 150,
+                    "y": 210,
+                    "grosseur": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                    "ballonRouge":  {
+                                        "x": -40,
+                                        "y": -120,
+                                        "image": "ballonRouge"
+                                    },
+                    "ballonVert":   {
+                                        "x": 0,
+                                        "y": -160,
+                                        "image": "ballonVert"
+                                    },
+                    "ballonBleu":   {
+                                        "x": 40,
+                                        "y": -120,
+                                        "image": "ballonBleu"
+                                    },
+                    "vies": 3,
+                    "vitesse": 500,
+                    "vitesseMin": 750,
+                    "vitesseMax": 1000,
+                    "gravite3ballons": -10000,
+                    "gravite2ballons": -7500,
+                    "gravite1ballons": -5000,
+                    "tempsArretMoteur": 1500,
+                    "tempsTransitionMort": 3000,
+                    "delaiDestructionFinNiveau": 5000,
+                    "vitesseRotationChute": 20,
+                    "limiteTop": 120,
+                    "fumee":    {
+                                    "image": "fumee",
+                                    "nbParticules": 12,
+                                    "gravite": -10000,
+                                    "graviteChute": 100,
+                                    "grosseurMin": 0.6,
+                                    "grosseurMax": 1,
+                                    "positionX": 0,
+                                    "positionY": 0,
+                                    "decalageX": 12,
+                                    "decalageY": 87,
+                                    "dureeVie": 250,
+                                    "frequence": 10,
+                                    "quantite": 0,
+                                    "vitesseYmin": -50,
+                                    "vitesseYmax": 50,
+                                    "vitesseXmin": 0,
+                                    "vitesseXmax": 0
+                                },
+                    "explosion":    {
+                                    "image": ["fumeeNoire", "fumeeGrise"],
+                                    "decalage": {
+                                                    "x": 0.36,
+                                                    "y": -0.28
+                                                },
+                                    "nbParticules": 50,
+                                    "gravite": -10200,
+                                    "grosseurMin": 2,
+                                    "grosseurMax": 4,
+                                    "dureeVie": 1000,
+                                    "frequence": 1,
+                                    "vitesseYmin": -150,
+                                    "vitesseYmax": 150,
+                                    "vitesseXmin": -150,
+                                    "vitesseXmax": 150
+                                }
+                },
+    "niveaux":  [
+                    {
+                        "nom": "niveau1",
+                        "grosseurBg":   {
+                                            "x": 4,
+                                            "y": 4
+                                        },
+                        "noNiveau": 1,
+                        "imageBg": "bgNiveau1",
+                        "positionBg":   {
+                                            "x": 0,
+                                            "y": 316
+                                        },
+                        "imageCiel": "cielNiveau1",
+                        "imageTuiles": "tuiles",
+                        "imageDrapeau": "drapeau",
+                        "positionDrapeau":  {
+                                                "x": 14850,
+                                                "y": 430
+                                            },
+                        "musique": "musiqueNiveau1",
+                        "infoTuiles": "tilemapNiveau01",
+                        "infoCouche": "montagnesCollisions1",
+                        "ennemi":   {
+                                        "image": "ennemi1",
+                                        "vitesseCreation": 3000,
+                                        "type": 1,
+                                        "decalageCreation": 300,
+                                        "positionX": "",
+                                        "positionY":    {
+                                                            "yHaut": 80,
+                                                            "yBas": 260
+                                                        },
+                                        "grosseur": {
+                                                        "x": 0.3,
+                                                        "y": 0.3
+                                                    },
+                                        "gravite": -10000,
+                                        "vitesse": -200
+                                    }
+                    },
+                    {
+                        "nom": "niveau2",
+                        "grosseurBg":   {
+                                            "x": 4,
+                                            "y": 4
+                                        },
+                        "noNiveau": 2,
+                        "imageBg": "bgNiveau2",
+                        "positionBg":   {
+                                            "x": 0,
+                                            "y": 232
+                                        },
+                        "imageCiel": "cielNiveau2",
+                        "imageTuiles": "tuiles",
+                        "imageDrapeau": "drapeau",
+                        "positionDrapeau":  {
+                                                "x": 14850,
+                                                "y": 430
+                                            },
+                        "musique": "musiqueNiveau2",
+                        "infoTuiles": "tilemapNiveau02",
+                        "infoCouche": "montagnesCollisions2",
+                        "ennemi":   {
+                                        "image": "ennemi2",
+                                        "vitesseCreation": 5000,
+                                        "type": 2,
+                                        "positionX": "",
+                                        "hauteurSprite": 195,
+                                        "positionY": -50,
+                                        "grosseur": {
+                                                        "x": 1,
+                                                        "y": 1
+                                                    },
+                                        "gravite": -10000,
+                                        "vitesse": 0,
+                                        "projectile":   {
+                                                            "image": "eclair",
+                                                            "grosseur": {
+                                                                            "x": 0.6,
+                                                                            "y": 0.8
+                                                                        },
+                                                            "gravite": -10000,
+                                                            "tempsCreationEclair2": 750,
+                                                            "rotation": 0.2,
+                                                            "ecartDistanceY": 25,
+                                                            "vitesse": 1000,
+                                                            "interval": 2500,
+                                                            "son": "sonEclair",
+                                                            "tempsAutodestruction": 500
+                                                        }
+                                    }
+                    },
+                    {
+                        "nom": "niveau3",
+                        "grosseurBg":   {
+                                            "x": 4,
+                                            "y": 4
+                                        },
+                        "noNiveau": 2,
+                        "imageBg": "bgNiveau3",
+                        "positionBg":   {
+                                            "x": 0,
+                                            "y": 240
+                                        },
+                        "imageCiel": "cielNiveau3",
+                        "imageTuiles": "tuiles",
+                        "imageDrapeau": "drapeau",
+                        "positionDrapeau":  {
+                                                "x": 14850,
+                                                "y": 445
+                                            },
+                        "musique": "musiqueNiveau3",
+                        "infoTuiles": "tilemapNiveau03",
+                        "infoCouche": "montagnesCollisions3",
+                        "ennemi":   {
+                                        "image": "ennemi3",
+                                        "vitesseCreation": 10000,
+                                        "type": 3,
+                                        "decalageDestruction": 1200,
+                                        "positionX": [2150, 3600, 6500, 8650, 11950, 13700],
+                                        "positionY": [435, 440, 490, 440, 550, 515],
+                                        "grosseur": {
+                                                        "x": 1,
+                                                        "y": 1
+                                                    },
+                                        "gravite": -10000,
+                                        "vitesse": 0,
+                                        "projectile":   {
+                                                            "image": "bouletCanon",
+                                                            "grosseur": {
+                                                                            "x": 0.8,
+                                                                            "y": 0.8
+                                                                        },
+                                                            "gravite": -8850,
+                                                            "vitesse": -1000,
+                                                            "interval": 3000,
+                                                            "decalageArretCreation": 200,
+                                                            "son": "sonCanon",
+                                                            "tempsAutodestruction": 3000,
+                                                            "distanceCreation": 300,
+                                                            "fumee":    {
+                                                                            "image": "fumee",
+                                                                            "nbParticules": 25,
+                                                                            "gravite": -10200,
+                                                                            "grosseurMin": 0.8,
+                                                                            "grosseurMax": 1.2,
+                                                                            "dureeVie": 750,
+                                                                            "frequence": 1,
+                                                                            "vitesseYmin": -100,
+                                                                            "vitesseYmax": 100,
+                                                                            "vitesseXmin": -100,
+                                                                            "vitesseXmax": 100
+                                                                        }
+                                                        }
+                                    }
+
+                    }
+                ]
+}
